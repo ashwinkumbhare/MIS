@@ -51,7 +51,7 @@ if (!extension_loaded('iconv') && !function_exists('iconv')) {
     $requirement7 = "<span class='label label-success'>Enabled</span>";
 }
 
-if (extension_loaded('imap')) {
+if (!extension_loaded('imap')) {
     $error        = true;
     $requirement8 = "<span class='label label-danger'>Not enabled</span>";
 } else {
